@@ -5,11 +5,14 @@
   --foreground: #171717;
 }
 
+.nav-link {
+@apply text-sm tracking-wide text-black/80 transition hover:text-black;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+ --font-hev: var(--font-hev);
 }
 
 @media (prefers-color-scheme: dark) {
