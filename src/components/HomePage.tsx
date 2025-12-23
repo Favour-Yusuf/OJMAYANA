@@ -75,7 +75,7 @@ export default function HomePage() {
         <div className="grid md:grid-cols-3 gap-16">
           <div>
             <Image
-              src="https://res.cloudinary.com/defbalxci/image/upload/v1765903946/DSC09404_gztwxv.jpg"
+              src="https://res.cloudinary.com/defbalxci/image/upload/v1765903286/DSC08376-Edit_sohnf7.jpg"
               alt="Fashion Campaigns"
               width={1200}
               height={1600}
@@ -88,7 +88,7 @@ export default function HomePage() {
 
           <div>
             <Image
-              src="https://res.cloudinary.com/defbalxci/image/upload/v1765903946/DSC09404_gztwxv.jpg"
+              src="https://res.cloudinary.com/defbalxci/image/upload/v1765903954/DSC03009_dt1mq6.jpg"
               alt="Brand Portraiture"
               width={1200}
               height={1600}
@@ -101,7 +101,7 @@ export default function HomePage() {
 
           <div>
             <Image
-              src="https://res.cloudinary.com/defbalxci/image/upload/v1765903946/DSC09404_gztwxv.jpg"
+              src="https://res.cloudinary.com/defbalxci/image/upload/v1765903437/Artboard_5_qnxesq.jpg"
               alt="Motion and Visual Narratives"
               width={1200}
               height={1600}
