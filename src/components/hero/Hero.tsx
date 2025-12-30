@@ -9,7 +9,7 @@ const slides = [
   },
   {
     text: "STORIES THAT LAST",
-    image: "https://res.cloudinary.com/defbalxci/image/upload/v1765903230/Artboard_1_jnrkhy.jpg",
+    image: "https://res.cloudinary.com/defbalxci/image/upload/v1765903243/DSC01488_h3mtza.jpg",
   },
   {
     text: "NOT STAGED.\nNOT RUSHED.",
@@ -21,7 +21,7 @@ const slides = [
   },
   {
     text: "STORIES THAT CONVERT",
-    image: "/images/hero-5.jpg",
+    image: "https://res.cloudinary.com/defbalxci/image/upload/v1765903807/Artboard_4_zk3lz7.jpg",
   },
 ]
 
