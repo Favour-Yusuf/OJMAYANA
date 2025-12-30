@@ -1,5 +1,6 @@
 "use client"
 
+import { useRef } from "react"
 import { useScrollScene } from "./useScrollScene"
 
 const slides = [
@@ -17,7 +18,7 @@ const slides = [
   },
   {
     text: "ELEVATING WHAT COMES FROM AFRICA",
-    image: "https://res.cloudinary.com/defbalxci/image/upload/v1765903243/DSC01488_h3mtza.jpg",
+    image: "https://res.cloudinary.com/defbalxci/image/upload/v1765903230/Artboard_1_jnrkhy.jpg",
   },
   {
     text: "STORIES THAT CONVERT",
@@ -26,10 +27,15 @@ const slides = [
 ]
 
 export default function Hero() {
-  const scene = useScrollScene(slides.length)
+  const sectionRef = useRef<HTMLElement>(null!)
+  const scene = useScrollScene(sectionRef, slides.length)
 
   return (
-    <section className="relative h-[500vh] bg-black text-white">
+    <section
+      ref={sectionRef}
+      className="relative bg-black text-white"
+      style={{ height: `${slides.length * 100}vh` }}
+    >
       <div className="sticky top-0 h-screen w-screen overflow-hidden">
 
         {/* Background images */}
@@ -47,7 +53,7 @@ export default function Hero() {
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/55" />
 
-        {/* Text slider */}
+        {/* Text */}
         <div className="relative z-10 flex h-full items-center px-6 md:px-20">
           <h1 className="max-w-6xl text-5xl md:text-7xl lg:text-8xl font-light leading-tight">
             {slides.map((slide, i) => (
@@ -65,6 +71,7 @@ export default function Hero() {
             ))}
           </h1>
         </div>
+
       </div>
     </section>
   )
