@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
+import Header from "@/components/static/Header";
+import Footer from "@/components/static/Footer";
 
 
 const hev = localFont({
@@ -40,7 +42,9 @@ export default function RootLayout({
       <body
         className={`${hev.variable} antialiased`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
