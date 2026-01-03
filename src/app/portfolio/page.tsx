@@ -1,18 +1,13 @@
-import React from 'react'
-import PortfolioHero from '@/components/portfolio/PortfolioHero'
-import FeaturedProjects from '@/components/portfolio/FeaturedProjects'
-import WorkCategories from '@/components/portfolio/WorkCategories'
-import PortfolioCTA from '@/components/portfolio/PortfolioCTA'
+import PortfolioHero from "@/components/portfolio/PortfolioHero"
+import PortfolioGrid from "@/components/portfolio/PortfolioGrid"
+import PortfolioCTA from "@/components/portfolio/PortfolioCTA"
 
-const PortfolioPage = () => {
+export default function PortfolioPage() {
   return (
     <>
       <PortfolioHero />
-      <FeaturedProjects />
-      <WorkCategories />
+      <PortfolioGrid />
       <PortfolioCTA />
     </>
   )
 }
-
-export default PortfolioPage

@@ -1,5 +1,6 @@
 import AboutCTA from '@/components/about/AboutCTA'
 import AboutHero from '@/components/about/AboutHero'
+import BehindTheScenes from '@/components/about/BehindTheScenes'
 import Beliefs from '@/components/about/Beliefs'
 import StudioStory from '@/components/about/StudioStory'
 import Team from '@/components/about/Team'
@@ -13,6 +14,7 @@ const AboutPage = () => {
     <StudioStory/>
     <Beliefs/>
     <Team/>
+    <BehindTheScenes/>
     <CreativeDirector/>
     <AboutCTA/>
     
