@@ -28,7 +28,7 @@ export default function Header() {
             : "bg-transparent"
         }`}
       >
-        <div className="px-6 md:px-20 py-5">
+        <div className="lg:px-24 md:px-16 sm:px-4 py-5">
           <div className="grid grid-cols-3 items-center text-white">
 
             {/* LOGO — LOCKED LEFT */}

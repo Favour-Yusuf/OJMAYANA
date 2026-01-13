@@ -21,6 +21,7 @@ export default function ProjectHero({
           alt={title}
           fill
           priority
+          // unoptimized
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black/50" />

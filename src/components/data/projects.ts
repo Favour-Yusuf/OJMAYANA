@@ -1,11 +1,17 @@
+export type ProjectImage = {
+  src: string
+  layout: "portrait" | "landscape"
+}
+
 export type Project = {
   slug: string
   title: string
   category: string
   coverImage: string
   description: string
-  images: string[]
+  images: ProjectImage[]
 }
+
 
 export const projects: Project[] = [
   {
@@ -13,13 +19,104 @@ export const projects: Project[] = [
     title: "Headies 17th Edition",
     category: "Event/Portrait",
     coverImage:
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767379962/DSC03074_ig1ggd.jpg",
+      "https://res.cloudinary.com/defbalxci/image/upload/v1768290446/DSC03695_avwu0o.jpg",
     description:
       "Coverage of the 17th Headies Awards, documenting performances, atmosphere, and behind-the-scenes moments. The focus was on capturing scale, emotion, and cultural energy without disrupting the event experience.",
     images: [
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767422127/DSC04086_uunvue.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767422467/DSC03325_hwovfs.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767422572/DSC03500_ynlnn4.jpg",
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290457/DSC03123_mswgo6.jpg",
+     layout: "portrait"
+        
+      },
+      {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768290456/DSC03223_dazg5n.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290455/DSC03236_s5tsmd.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290454/DSC03279_pnmspe.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290453/DSC03325_1_t1tdui.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290451/DSC03392_humqx6.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290450/DSC03438_rrrcfs.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290449/DSC03453_dmu2pl.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290446/DSC03695_avwu0o.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290446/DSC04041_msbxjx.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290446/DSC03751_tiekbb.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290445/DSC03965_qdfqwg.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290444/DSC04085_m0ywrt.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290443/DSC04075_n3ordi.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290439/DSC04133_iffyd2.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290438/DSC04110_n3t4fc.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290438/DSC04108_ydwkti.jpg",
+     layout: "landscape"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290438/DSC04139_ogvvbc.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290437/DSC04151_hfayci.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290437/DSC03107_x2h52p.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290437/DSC04129_gf4fjh.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1767422467/DSC03325_hwovfs.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1767422127/DSC04086_uunvue.jpg",
+     layout: "portrait"
+      },
+     
     ],
   },
   {
@@ -31,9 +128,157 @@ export const projects: Project[] = [
     description:
       "An intimate visual record of Ayra Starr’s listening party, capturing the mood, crowd energy, and personal moments that defined the night. Designed to feel candid, immersive, and culturally relevant.",
     images: [
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767423515/AYRA-STAR_LISTENING_PARTY-6_1_wbzsla.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767423458/AYRA-STAR_LISTENING_PARTY-21_1_b0rpgp.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767423354/AYRA-STAR_LISTENING_PARTY-283_f9zn66.jpg",
+        {
+     src:  "https://res.cloudinary.com/defbalxci/image/upload/v1768298316/AYRA-STAR_LISTENING_PARTY-40_vdqhx6.jpg",
+     layout: "portrait"
+        
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298325/AYRA-STAR_LISTENING_PARTY-18_i2cwy9.jpg",
+     layout: "portrait"
+        
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298320/AYRA-STAR_LISTENING_PARTY-32_zm4bb4.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298313/AYRA-STAR_LISTENING_PARTY-27_jg3bxq.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298310/AYRA-STAR_LISTENING_PARTY-25_j7wif2.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298306/AYRA-STAR_LISTENING_PARTY-14_n3x9iw.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298303/AYRA-STAR_LISTENING_PARTY-17_kvdthy.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298300/AYRA-STAR_LISTENING_PARTY-3_iyjebd.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298297/AYRA-STAR_LISTENING_PARTY-69_ctt8mk.jpg",
+     layout: "landscape"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295548/AYRA-STAR_LISTENING_PARTY-16_nulduw.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295547/AYRA-STAR_LISTENING_PARTY-45_syd4yg.jpg",
+     layout: "landscape"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295540/AYRA-STAR_LISTENING_PARTY-145_hmuvc2.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295536/AYRA-STAR_LISTENING_PARTY-366_oos0cl.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295461/AYRA-STAR_LISTENING_PARTY-156_d59wkw.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295460/AYRA-STAR_LISTENING_PARTY-366_1_lyk3fk.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295460/AYRA-STAR_LISTENING_PARTY-276_ronjq3.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295459/AYRA-STAR_LISTENING_PARTY-275_vqbirb.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295447/AYRA-STAR_LISTENING_PARTY-285_lakqvu.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295446/AYRA-STAR_LISTENING_PARTY-203_q7l9iq.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295436/AYRA-STAR_LISTENING_PARTY-96_kyjodo.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295434/AYRA-STAR_LISTENING_PARTY-358_iju2sv.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295432/AYRA-STAR_LISTENING_PARTY-102_atg77x.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295431/AYRA-STAR_LISTENING_PARTY-322_khriqv.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295362/AYRA-STAR_LISTENING_PARTY-75_btomup.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295360/AYRA-STAR_LISTENING_PARTY-158_fyicy6.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295358/AYRA-STAR_LISTENING_PARTY-153_nn9w41.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295355/AYRA-STAR_LISTENING_PARTY-357_hls1ji.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295352/AYRA-STAR_LISTENING_PARTY-166_vlef0v.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295345/AYRA-STAR_LISTENING_PARTY-30_kshecy.jpg",
+     layout: "landscape"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295342/AYRA-STAR_LISTENING_PARTY-310_wqjqsd.jpg",
+     layout: "portrait"
+      },
+       {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295331/AYRA-STAR_LISTENING_PARTY-120_rdcnbf.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295338/AYRA-STAR_LISTENING_PARTY-62_tuajco.jpg",
+     layout: "landscape"
+      },
+       
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295297/AYRA-STAR_LISTENING_PARTY-146_pami0m.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295296/AYRA-STAR_LISTENING_PARTY-263_kigsbu.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295293/AYRA-STAR_LISTENING_PARTY-251_sk9ecs.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295290/AYRA-STAR_LISTENING_PARTY-8_abguaf.jpg",
+     layout: "portrait"
+      },
+        {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295287/AYRA-STAR_LISTENING_PARTY-52_qaewt6.jpg",
+     layout: "landscape"
+      },
     ],
   },
   {
@@ -41,15 +286,139 @@ export const projects: Project[] = [
     title: "Woora Woman Campaign",
     category: "Fashion Campaign",
     coverImage:
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767424706/OJM04511_gy3pqv.jpg",
+      "https://res.cloudinary.com/defbalxci/image/upload/v1768297887/OJM04528_gixiyb.jpg",
       
     description:
       "A fashion campaign focused on identity, confidence, and modern femininity. The visuals were crafted to support brand positioning while remaining expressive and editorial.",
     images: [
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767424753/OJM04266_gn10mj.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767424729/OJM04093_uz3cbd.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767424718/OJM04204_hreyfx.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767424713/OJM04435_eqa1ln.jpg",
+      {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298069/OJM03993_z5ys1b.jpg",
+     layout: "portrait"
+      },
+      {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298066/OJM04004_xzeudh.jpg",
+     layout: "portrait"
+      },
+      {
+     src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298063/OJM04398_bubyf6.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768298060/OJM03940_cdolf3.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768298056/OJM04057_hdqke5.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768298051/OJM04112_jgk06g.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768298049/OJM04142_rjgivh.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768298047/OJM04452_t9ouzo.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768297906/OJM04513_xetwtd.jpg",
+     layout: "landscape"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768297905/OJM04535_stbnrd.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768297903/OJM04549_u7v3gj.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768297897/OJM04469_zci0dc.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768297893/OJM04036_blz7og.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768297891/OJM04743_odriwd.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768297887/OJM04528_gixiyb.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768297882/OJM04454_awtdug.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768297880/OJM04462_rinq6n.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768297880/OJM04487_fnencq.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768297877/OJM04495_nsp6yq.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768297777/OJM04496_dnzlm7.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768297750/OJM05007_zubxlw.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768297744/OJM04817_fpvwav.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768297741/OJM04551_ih46el.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768297738/OJM04553_aeg5ac.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768297738/OJM04640_hqrzf7.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768297736/OJM04715_lfgwki.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768297507/OJM05039_a6glo7.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768297505/OJM05050_emzq7u.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768297501/OJM04825_nwk5vd.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768297500/OJM04962_m4n3yr.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768297499/OJM04980_eb8a6h.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768297498/OJM04630_h9xqzr.jpg",
+     layout: "portrait"
+      },
     ],
   },
   {
@@ -57,14 +426,142 @@ export const projects: Project[] = [
     title: "Vanskere Fashion",
     category: "Fashion / Brand",
     coverImage:
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767425214/VANSKERE_MALE0203_tqtaaq.jpg",
+      "https://res.cloudinary.com/defbalxci/image/upload/v1768293464/DSC01721_qhdapy.jpg",
     description:
       "Brand visuals created to strengthen Vanskere’s fashion identity across campaigns and digital platforms. The work balances clean composition with a strong sense of attitude and style.",
     images: [
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767425233/VANSKERE_CAMPAIGN0068_vz9ana.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767425205/VK0965_pyxftq.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767425217/VANSKERE_MALE0055_jklkqg.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767425222/VANSKERE_CAMPAIGN0210_hxaqte.jpg",
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293468/VANSKERE_MALE0608_gepqfz.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293467/VANSKERE_MALE0143_z9sfa2.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293464/DSC01721_qhdapy.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293460/VANSKERE_CAMPAIGN0038_swf72k.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293459/VANSKERE_CAMPAIGN0086_dkkakc.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293457/VANSKERE_CAMPAIGN0046_rl9t2q.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293454/VANSKERE_CAMPAIGN0068_1_kfp9oz.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293448/VANSKERE_CAMPAIGN0353_tgrufu.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293447/VANSKERE_CAMPAIGN0449_w2du0y.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293445/VANSKERE_CAMPAIGN0175_olvnfe.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293439/VANSKERE_CAMPAIGN0210_1_mxljuc.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293438/DSC01719_gq0zvi.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293436/VANSKERE_CAMPAIGN0410_w2evmh.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293433/DSC01638_1_n9call.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293427/VANSKERE_CAMPAIGN0242_p91lb1.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293427/VANSKERE_MALE0777_kurznz.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293425/VANSKERE_MALE0363_tyw1c4.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293425/VK0669_oqxbur.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293419/VK0130_dzntfh.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293417/VANSKERE_MALE0517_gtbjdj.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293412/VANSKERE_MALE0039_coxiux.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293411/VK0438_srxuel.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293408/VK0338_igoyac.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293405/VK0816_ivxc7d.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293400/VK0965_1_t7jvh5.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293395/VANSKERE0024_el1bwp.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293393/VANSKERE0026_xddgwg.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293391/VANSKERE0047_hpzmxz.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293347/VANSKERE0098_kn5alj.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293338/VANSKERE0169_vbaax5.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293337/VANSKERE0203_zawrcx.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293330/VANSKERE0232_r0i7rr.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768293326/VANSKERE0286_x6r56e.jpg",
+     layout: "portrait"
+      }, 
     ],
   },
   {
@@ -76,10 +573,66 @@ export const projects: Project[] = [
     description:
       "Product-focused imagery designed to support e-commerce and marketing efforts. The shoot prioritized clarity, detail, and consistency to build trust and drive conversion.",
     images: [
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767425719/DSC05841_nhfofv.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767425725/DSC05742_agtb8i.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767425725/DSC05817_hezhvi.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767425716/DSC05898_vcdoyw.jpg",
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290769/DSC05772_feyolx.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290764/DSC05755_mpg5jj.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290763/DSC05765_nh0f5o.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290763/DSC05785_hbwrnz.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290760/DSC05810_qxddrx.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290759/DSC05805_yetzlq.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290758/DSC05847_kmsmag.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290757/DSC05732_h3iesq.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290757/DSC05871_dbfcmd.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768290757/DSC05890_pg2zjj.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1767425725/DSC05817_hezhvi.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1767425725/DSC05742_agtb8i.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1767425719/DSC05841_nhfofv.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1767425716/DSC05898_vcdoyw.jpg",
+     layout: "portrait"
+      },
+      {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1767425715/DSC05855_kbtibb.jpg",
+     layout: "portrait"
+      },
     ],
   },
   {
@@ -87,17 +640,116 @@ export const projects: Project[] = [
     title: "Lady Flora Event",
     category: "Event / Lifestyle",
     coverImage:
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767426097/DSC00743_ltgsrc.jpg",
+      "https://res.cloudinary.com/defbalxci/image/upload/v1768291150/DSC00470_ixufby.jpg",
     description:
       "Product-focused imagery designed to support e-commerce and marketing efforts. The shoot prioritized clarity, detail, and consistency to build trust and drive conversion.",
     images: [
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767426103/DSC00477_gts1ga.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767426105/DSC01006_lyzdnp.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767426109/DSC00462_omibok.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767426095/DSC00490_awewdw.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767426099/DSC01086_unuitl.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767426100/DSC01059_tesdiq.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767426102/DSC00885_jfvknz.jpg",
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768291153/DSC00468_yvewts.jpg",
+     layout: "portrait"
+      },
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768291152/DSC00480_ollq0n.jpg",
+     layout: "portrait"
+      },
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768291152/DSC00462_1_orkuea.jpg",
+     layout: "portrait"
+      },
+          {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768291130/DSC01014_kkp7jc.jpg",
+     layout: "portrait"
+      },
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768291147/DSC00543_ikhljz.jpg",
+     layout: "landscape"
+      },
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768291144/DSC00490_1_phwm1q.jpg",
+     layout: "portrait"
+      },
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768291138/DSC00482_rcuxpj.jpg",
+     layout: "portrait"
+      },
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768291147/DSC00497_extmwe.jpg",
+     layout: "landscape"
+      },
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768291137/DSC00637_sbqras.jpg",
+     layout: "portrait"
+      },
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768291135/DSC00610_w0965c.jpg",
+     layout: "portrait"
+      },
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768291134/DSC00533_yafcld.jpg",
+     layout: "portrait"
+      },
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768291141/DSC00844_w6maj0.jpg",
+     layout: "landscape"
+      },
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768291131/DSC00771_eji5xo.jpg",
+     layout: "portrait"
+      },
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768291126/DSC00783_fvnfal.jpg",
+     layout: "landscape"
+      },
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768291122/DSC00879_ytbqkd.jpg",
+     layout: "portrait"
+      },
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768291121/DSC00885_1_hdoheh.jpg",
+     layout: "portrait"
+      },
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768291126/DSC00799_orvnv4.jpg",
+     layout: "landscape"
+      },
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768291123/DSC01022_nvx2cp.jpg",
+     layout: "landscape"
+      },
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768291118/DSC01091_cndqqy.jpg",
+     layout: "landscape"
+      },
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768291122/DSC00879_ytbqkd.jpg",
+     layout: "portrait"
+      },
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1768291117/DSC00458_bhxlap.jpg",
+     layout: "portrait"
+      },
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1767426109/DSC00462_omibok.jpg",
+     layout: "portrait"
+      },
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1767426100/DSC01059_tesdiq.jpg",
+     layout: "portrait"
+      },
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1767426097/DSC00743_ltgsrc.jpg",
+     layout: "landscape"
+      },
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1767426105/DSC01006_lyzdnp.jpg",
+     layout: "landscape"
+      },
+         {
+     src: "https://res.cloudinary.com/defbalxci/image/upload/v1767426103/DSC00477_gts1ga.jpg",
+     layout: "landscape"
+      },
+      
+
     ],
   },
   {
@@ -105,14 +757,51 @@ export const projects: Project[] = [
     title: "OnlyDerah Portraits",
     category: "Portrait",
     coverImage:
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767430249/DSC06737_snounb.jpg",
+      "https://res.cloudinary.com/defbalxci/image/upload/v1768295563/DSC06737_imygmd.jpg",
     description:
       "A portrait series focused on personality and presence. The goal was to create honest, expressive images that feel personal while remaining visually controlled.",
     images: [
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767430335/DSC06774_dlhs4x.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767430277/DSC06842_i8edog.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767430339/DSC06749_wjrgeb.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767430341/DSC06719_layjrh.jpg"
+     {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295565/DSC06722_nsc8y4.jpg",
+      layout:"portrait"
+     },
+     {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295563/DSC06737_imygmd.jpg",
+      layout:"portrait"
+     },
+     {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768294543/DSC06801-Edit_xq2az4.jpg",
+      layout:"portrait"
+     },
+     {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295561/DSC06728_zmh7za.jpg",
+      layout:"portrait"
+     },
+     {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768294541/DSC06812-Edit-2_y7szik.jpg",
+      layout:"portrait"
+     },
+     {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768295559/DSC06753_o9ytxc.jpg",
+      layout:"portrait"
+     },
+     {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768294540/DSC06812-Edit_a6kkrb.jpg",
+      layout:"portrait"
+     },
+     {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768294539/DSC06861-Edit_ndsrcw.jpg",
+      layout:"portrait"
+     },
+     {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768294536/DSC06898-Edit_obuddh.jpg",
+      layout:"portrait"
+     },
+     {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768294536/DSC06787-Edit_ph7c4n.jpg",
+      layout:"portrait"
+     },
+   
     ],
   },
   {
@@ -120,15 +809,635 @@ export const projects: Project[] = [
     title: "Wizkid — Live Performance",
     category: "Event / Culture",
     coverImage:
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767430800/OJMAYANA-14_izc7qb.jpg",
+      "https://res.cloudinary.com/defbalxci/image/upload/v1768298965/OJMAYANA-5_sjbkje.jpg",
     description:
       "Live performance coverage capturing Wizkid on stage in real time. The focus was on energy, movement, and atmosphere—documenting the moment as it unfolded without interruption or staging.",
     images: [
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767430808/OJMAYANA-2_z6uw4k.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767430815/OJMAYANA-5_w5mnod.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767430808/OJMAYANA-12_jlw9yh.jpg",
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767430810/OJMAYANA-3_jlpfgm.jpg"
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298972/OJMAYANA-11_aivrvq.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298965/OJMAYANA-5_sjbkje.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298962/OJMAYANA-1_c5xynl.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298961/OJMAYANA-10_kbcrek.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298952/OJMAYANA-13_rhojhk.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298944/OJMAYANA-4_d3vjop.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298939/OJMAYANA-3_xe8d4f.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298937/OJMAYANA-9_vpjjpw.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298800/OJMAYANA-14_wly3na.jpg",
+      layout:"landscape"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298815/OJMAYANA-8_p9ouof.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298812/OJMAYANA-12_o39f4x.jpg",
+      layout:"portrait"
+     },
+      
     ],
   },
+
+{
+    slug: "food",
+    title: "Food",
+    category: "Food",
+    coverImage:
+      "https://res.cloudinary.com/defbalxci/image/upload/v1768302647/OJM01021_xy6bq5.jpg",
+    description:
+      "Food imagery focused on texture, color, and presentation. The visuals are designed to make dishes feel fresh, inviting, and appetizing while supporting brand and menu storytelling.",
+    images: [
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768302912/OJM00503_gyftpp.jpg",
+      layout:"portrait"
+     },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768302912/OJM00952_t3hram.jpg",
+      layout:"portrait"
+     },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768302903/OJM00218_ttxfmp.jpg",
+      layout:"portrait"
+     },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768302901/OJM01021_ulp3ks.jpg",
+      layout:"portrait"
+     },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768302908/OJM01640_qd0oxx.jpg",
+      layout:"landscape"
+     },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299960/OJM09695_mlbz6e.jpg",
+      layout:"portrait"
+     },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299965/OJM00102_eijcf3.jpg",
+      layout:"portrait"
+     },
+    //       {
+    //   src:"",
+    //   layout:"portrait"
+    //  },
+    //       {
+    //   src:"",
+    //   layout:"portrait"
+    //  },
+    //       {
+    //   src:"",
+    //   layout:"portrait"
+    //  },
+    //       {
+    //   src:"",
+    //   layout:"portrait"
+    //  },
+    //       {
+    //   src:"",
+    //   layout:"portrait"
+    //  },
+    //       {
+    //   src:"",
+    //   layout:"portrait"
+    //  },
+    //       {
+    //   src:"",
+    //   layout:"portrait"
+    //  },
+    //       {
+    //   src:"",
+    //   layout:"portrait"
+    //  },
+    //       {
+    //   src:"",
+    //   layout:"portrait"
+    //  },
+    //       {
+    //   src:"",
+    //   layout:"portrait"
+    //  },
+    ]
+   },
+
+   {
+    slug: "lrp-fashion-ecommerce",
+    title: "LRP Fashion — E-commerce Visuals",
+    category: "LRP Fashion — E-commerce Visuals",
+    coverImage:
+      "https://res.cloudinary.com/defbalxci/image/upload/v1768293316/LEEZ_FASHION09698-2_gwcwgu.jpg",
+    description:
+      "Clean, high-quality fashion imagery designed for online retail and brand platforms. The work prioritizes fit, texture, and consistency to support customer confidence and sales.",
+    images: [
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768293318/LEEZ_FASHION00053_o6rcrd.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768293319/LEEZ_FASHION09551_etpohn.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768293316/LEEZ_FASHION09698-2_gwcwgu.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768293314/LEEZ_FASHION09558_vn8aix.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768293314/LEEZ_FASHION09627_wjedmt.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768293311/LEEZ_FASHION09738_d7uvdk.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768293301/LEEZ_FASHION00085_vqxljm.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768293301/LEEZ_FASHION09627_1_xvnswr.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768293294/LEEZ_FASHION09771-2_hlpowq.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768293289/LEEZ_FASHION09861_iwuqrn.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768293288/LEEZ_FASHION00109_ag4vj2.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768293282/LEEZ_FASHION00003_bhtjwg.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768293282/LEEZ_FASHION00083_zhupji.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768293277/LEEZ_FASHION00107_d8gzd7.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768292469/LEEZ_FASHION09829_mg7ebl.jpg",
+      layout:"portrait"
+     },
+      
+    ]
+   },
+   {
+    slug: "oyinkansola-birthday-portraits",
+    title: "oyinkansola-birthday-portraits",
+    category: "Portrait / Lifestyle",
+    coverImage:
+      "https://res.cloudinary.com/defbalxci/image/upload/v1768298571/DSC00850_nezphc.jpg",
+    description:
+      "A lifestyle portrait session documenting a personal milestone. The focus was on relaxed moments, personality, and natural interaction rather than posed formality.",
+    images: [
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298588/DSC01497_zv1xaz.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298583/DSC01255_sclxra.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298578/DSC01253_hizu0x.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298578/DSC00824_nuanbf.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298571/DSC00850_nezphc.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298567/DSC01115_povqd5.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298563/DSC01081_pno4ai.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298561/DSC01714_d0xdx4.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298560/DSC01563_awfcag.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298558/DSC01525_ngywx9.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298548/DSC01513_oz4z5y.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298543/DSC01122_horw5s.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298539/DSC00920_jyksek.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298527/DSC01456_pqgkts.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298524/DSC00880_z7ycef.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298521/DSC01018_nlvwk5.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298507/DSC00956_tjrpka.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298504/DSC01505_jlaew3.jpg",
+      layout:"portrait"
+     },
+      
+    ]
+   },
+   {
+    slug: "final-fashion-street-style",
+    title: "Final — Street Style Series",
+    category: "Fashion / E-commerce",
+    coverImage:
+      "https://res.cloudinary.com/defbalxci/image/upload/v1768298712/DSC01937-Edit_csliyq.jpg",
+    description:
+      "Street-style fashion imagery capturing movement, attitude, and everyday style. The visuals blend spontaneity with strong composition to reflect modern fashion culture.",
+    images: [
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298727/DSC01868-Edit_vluhqj.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298724/DSC01839-Edit_kzm87w.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298714/DSC01973-Edit_eumded.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298712/DSC01937-Edit_csliyq.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298710/DSC01897-Edit_cgq1lt.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298706/DSC01885-Edit_dd7p0x.jpg",
+      layout:"portrait"
+     },
+    ]
+   },
+   {
+    slug: "aretha-portraits",
+    title: "Aretha Portrait Series",
+    category: "Portrait",
+    coverImage:
+      "https://res.cloudinary.com/defbalxci/image/upload/v1768294064/20240409-BIRTHDAY_SHOOT_SESSION_100476-Edit_tl3wfr.jpg",
+    description:
+      "A controlled portrait series focused on mood and character. The images explore subtle expression and presence through simple, intentional composition.",
+    images: [
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768294065/20240409-BIRTHDAY_SHOOT_SESSION_100182-Edit_w4yuxk.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768294064/20240409-BIRTHDAY_SHOOT_SESSION_100476-Edit_tl3wfr.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768294063/20240409-BIRTHDAY_SHOOT_SESSION_100199-Edit_vifpx9.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768294057/20240409-BIRTHDAY_SHOOT_SESSION_100232-Edit_nwchhf.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768294057/20240409-BIRTHDAY_SHOOT_SESSION_100201-Edit_yhxdny.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768294057/20240409-BIRTHDAY_SHOOT_SESSION_100434-Edit_haxhmn.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768294055/20240409-BIRTHDAY_SHOOT_SESSION_100526-Edit_xiugb5.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768294049/20240409-BIRTHDAY_SHOOT_SESSION_100202-Edit_acookg.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768294048/20240409-BIRTHDAY_SHOOT_SESSION_100549-Edit_sx8jba.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768294040/20240409-BIRTHDAY_SHOOT_SESSION_100656_ra9ftk.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768294034/20240409-BIRTHDAY_SHOOT_SESSION_100651_hitwq5.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768294040/20240409-BIRTHDAY_SHOOT_SESSION_100598_qwmqqi.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768294045/20240409-BIRTHDAY_SHOOT_SESSION_100538-Edit_ujsrhk.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768294029/20240409-BIRTHDAY_SHOOT_SESSION_100657_yhrj9u.jpg",
+      layout:"portrait"
+     },
+    ]
+   },
+   {
+    slug: "banke-kuku-fashion-event",
+    title: "Banke Kuku — Fashion Event",
+    category: "Fashion / Event",
+    coverImage:
+      "https://res.cloudinary.com/defbalxci/image/upload/v1768297245/DSC01515_njsjyg.jpg",
+    description:
+      "Event coverage documenting the intersection of fashion, culture, and audience engagement. The imagery highlights both the collection and the experience surrounding it.",
+    images: [
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768297429/DSC01393_evmziq.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768297426/DSC01376_g8qt6s.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768297425/DSC01516_rzwk1b.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768297373/DSC01529_tyimfs.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768297368/DSC01368_jlhn6q.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768297358/DSC01599_wwvqgx.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768297356/DSC01527_gzb5nu.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768297350/DSC01508_xm7n1q.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768297348/DSC01407_j89lpc.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768297343/DSC01580_mhghsa.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768297340/DSC01418_bnyiz7.jpg",
+      layout:"portrait"
+     },
+     {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768297339/DSC01587_jxozrl.jpg",
+      layout:"portrait"
+     },
+     {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768297334/DSC01695_nfynxm.jpg",
+      layout:"portrait"
+     },
+     {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768297331/DSC01605_lyohi6.jpg",
+      layout:"portrait"
+     },
+     {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768297327/DSC01513_swjxr8.jpg",
+      layout:"portrait"
+     },
+     {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768297323/DSC01706_mrrh1d.jpg",
+      layout:"portrait"
+     },
+     {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768297322/DSC01374_os0wjj.jpg",
+      layout:"portrait"
+     },
+     {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768297245/DSC01515_njsjyg.jpg",
+      layout:"portrait"
+     },
+     {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768297238/DSC01575_ujrdfl.jpg",
+      layout:"portrait"
+     },
+    
+    ]
+   },
+   {
+    slug: "portrait-session",
+    title: "Portrait Session",
+    category: "Portrait",
+    coverImage:
+      "https://res.cloudinary.com/defbalxci/image/upload/v1768299181/DSC08022_xyw8np.jpg",
+    description:
+      "A simple portrait session focused on natural expression and clean visual storytelling. The images prioritize authenticity over heavy styling.",
+    images: [
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299178/DSC08021_byohmp.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299175/DSC08033_mqgdtf.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299171/DSC08039_wwmpqy.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299168/DSC08041_bna97w.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299165/DSC08038_vhnnev.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299163/DSC08042_rqy5id.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299160/DSC08053_h5yxke.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299154/DSC08056_t2md7g.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299146/DSC08066_ck84vk.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299142/DSC08060_yfvu3b.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299140/DSC08069_k95ctb.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299136/DSC08072_xltxcd.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298987/DSC08079_qxycn9.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298983/DSC08084_eonohs.jpg",
+      layout:"portrait"
+     },
+       {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768298981/DSC08082_xkcvou.jpg",
+      layout:"portrait"
+     },
+     
+    ]
+   },
+   {
+    slug: "for-kanga-portraits",
+    title: "For Kanga Portrait Series",
+    category: "Portrait / Fashion",
+    coverImage:
+      "https://res.cloudinary.com/defbalxci/image/upload/v1768299241/Copy_of_OJMAYANA-06995_lypvff.jpg",
+    description:
+      "A portrait series blending fashion elements with personal expression. The work focuses on form, styling, and controlled composition.",
+    images: [
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299246/DSC00854_ltkftf.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299251/DSC00856_gymxyo.jpg",
+      layout:"portrait"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299241/Copy_of_OJMAYANA-06995_lypvff.jpg",
+      layout:"portrait"
+     },
+    ]
+   },
+   {
+    slug: "hamra-indoor-portraits",
+    title: "Hamra — Indoor Portraits",
+    category: "Portrait / Lifestyle",
+    coverImage:
+      "https://res.cloudinary.com/defbalxci/image/upload/v1768299187/DSC06892_httcy8.jpg",
+    description:
+      "Indoor portraits created in a controlled environment to highlight personality, mood, and subtle interaction with space.",
+    images: [
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299234/DSC06925_qxdfu0.jpg",
+      layout:"portrait"
+     },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299231/DSC06933_varjgi.jpg",
+      layout:"portrait"
+     },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299228/DSC06931_gvvcwq.jpg",
+      layout:"portrait"
+     },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299225/DSC06930_dqgbtu.jpg",
+      layout:"portrait"
+     },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299224/DSC06940_nvzejr.jpg",
+      layout:"portrait"
+     },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299217/DSC06939_zotkuo.jpg",
+      layout:"portrait"
+     },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299213/DSC06960_e9nfhj.jpg",
+      layout:"portrait"
+     },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299205/DSC06963_uzbo9w.jpg",
+      layout:"portrait"
+     },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299201/DSC06969_g5fn4b.jpg",
+      layout:"portrait"
+     },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299193/DSC06959_dek65u.jpg",
+      layout:"portrait"
+     },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299191/DSC06888_srsqb4.jpg",
+      layout:"portrait"
+     },
+       
+    ]
+   }
+   
   // more projects…
 ]

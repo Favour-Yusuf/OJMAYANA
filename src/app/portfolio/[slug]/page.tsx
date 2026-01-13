@@ -30,8 +30,8 @@ export default async function ProjectPage({ params }: PageProps) {
       />
 
       <ProjectContext description={project.description} />
+<ProjectGallery images={project.images} />
 
-      <ProjectGallery images={project.images} />
 
       <ProjectCTA />
     </>

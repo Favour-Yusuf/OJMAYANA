@@ -1,13 +1,50 @@
 "use client"
 
+import Link from "next/link"
+
+const works = [
+  {
+    title: "Fashion Campaign",
+    src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903242/DSC01483_xnusrn.jpg",
+  },
+  {
+    title: "Portraits",
+    src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903935/DSC09392_jsbmhg.jpg",
+  },
+  {
+    title: "Events",
+    src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903075/DSC09988_rhaxan.jpg",
+  },
+  {
+    title: "Portrait",
+    src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903958/FEMALE_ARTISTE0059_qlvvbb.jpg",
+  },
+  {
+    title: "Product Photography",
+    src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903837/DSC06340-14_jblqby.jpg",
+  },
+  {
+    title: "Lifestyle",
+    src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903759/DSC01376_pqqtry.jpg",
+  },
+  {
+    title: "Food Photography",
+    src: "https://res.cloudinary.com/defbalxci/image/upload/v1767187425/OJM00262_1_p04vyz.jpg",
+  },
+  {
+    title: "Corporate",
+    src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903441/Artboard_8_pykwhp.jpg",
+  },
+]
+
 export default function FeaturedWork() {
   return (
-    <section className="bg-black text-white px-6 md:px-20 py-32 md:py-48">
+    <section className="bg-black text-white px-6 md:px-20 py-28 md:py-40">
       <div className="max-w-7xl mx-auto">
 
-        {/* Section header */}
-        <div className="mb-24">
-          <p className="mb-4 text-xs uppercase tracking-widest text-white/50">
+        {/* Section Header */}
+        <div className="mb-16">
+          <p className="mb-3 text-xs uppercase tracking-widest text-white/50">
             Selected work
           </p>
           <h2 className="text-4xl md:text-6xl font-light leading-tight">
@@ -15,102 +52,58 @@ export default function FeaturedWork() {
           </h2>
         </div>
 
-        {/* Editorial grid */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
-
-          {/* Image 1 */}
-          <WorkItem
-            col="md:col-span-7"
-            height="h-[70vh]"
-            title="Fashion Campaign"
-            src="https://res.cloudinary.com/defbalxci/image/upload/v1765903242/DSC01483_xnusrn.jpg"
-          />
-
-          {/* Image 2 */}
-          <WorkItem
-            col="md:col-span-5 md:mt-32"
-            height="h-[55vh]"
-            title="Portraits"
-            src="https://res.cloudinary.com/defbalxci/image/upload/v1765903935/DSC09392_jsbmhg.jpg"
-          />
-
-          {/* Image 3 */}
-          <WorkItem
-            col="md:col-span-8"
-            height="h-[65vh]"
-            title="Events"
-            src="https://res.cloudinary.com/defbalxci/image/upload/v1765903075/DSC09988_rhaxan.jpg"
-          />
-
-          {/* Image 4 */}
-          <WorkItem
-            col="md:col-span-4 md:mt-40"
-            height="h-[50vh]"
-            title="Portrait"
-            src="https://res.cloudinary.com/defbalxci/image/upload/v1765903958/FEMALE_ARTISTE0059_qlvvbb.jpg"
-          />
-
-          {/* Image 5 */}
-          <WorkItem
-            col="md:col-span-6"
-            height="h-[60vh]"
-            title="Product Photography"
-            src="https://res.cloudinary.com/defbalxci/image/upload/v1765903837/DSC06340-14_jblqby.jpg"
-          />
-
-          {/* Image 6 */}
-          <WorkItem
-            col="md:col-span-6 md:mt-24"
-            height="h-[60vh]"
-            title="Lifestyle"
-            src="https://res.cloudinary.com/defbalxci/image/upload/v1765903759/DSC01376_pqqtry.jpg"
-          />
-
-          {/* Image 7 */}
-          <WorkItem
-            col="md:col-span-5"
-            height="h-[55vh]"
-            title="Food Photography"
-            src="https://res.cloudinary.com/defbalxci/image/upload/v1767187425/OJM00262_1_p04vyz.jpg"
-          />
-
-          {/* Image 8 */}
-          <WorkItem
-            col="md:col-span-7 md:mt-36"
-            height="h-[70vh]"
-            title="Coperate"
-            src="https://res.cloudinary.com/defbalxci/image/upload/v1765903441/Artboard_8_pykwhp.jpg"
-          />
-
+        {/* Instagram-style Masonry Grid */}
+        <div className="columns-2 md:columns-3 gap-3 md:gap-4">
+          {works.map((work, i) => (
+            <WorkItem key={i} {...work} />
+          ))}
         </div>
+
+        {/* CTA */}
+        <div className="mt-24 text-center">
+          <p className="mb-6 text-white/60 text-xs uppercase tracking-widest">
+            Want to see more?
+          </p>
+
+          <Link
+            href="/portfolio"
+            className="inline-flex items-center gap-3 border border-[#dfaa26] px-10 py-4 text-xs uppercase tracking-widest text-[#dfaa26]
+                       transition hover:bg-[#dfaa26] hover:text-black"
+          >
+            View Full Portfolio →
+          </Link>
+        </div>
+
       </div>
     </section>
   )
 }
 
 /* ----------------------------- */
-/* Work Item Component           */
+/* Work Item                     */
 /* ----------------------------- */
 
 function WorkItem({
   src,
   title,
-  col,
-  height,
 }: {
   src: string
   title: string
-  col: string
-  height: string
 }) {
   return (
-    <div className={`${col}`}>
-      <img
-        src={src}
-        alt={title}
-        className={`w-full ${height} object-cover`}
-      />
-      <p className="mt-4 text-sm text-white/60">
+    <div className="mb-3 md:mb-4 break-inside-avoid group">
+      <div className="relative overflow-hidden">
+        <img
+          src={src}
+          alt={title}
+          className="w-full h-auto transition-transform duration-300 group-hover:scale-[1.02]"
+        />
+
+        {/* Subtle hover overlay */}
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition" />
+      </div>
+
+      <p className="mt-2 text-xs uppercase tracking-widest text-white/60">
         {title}
       </p>
     </div>
