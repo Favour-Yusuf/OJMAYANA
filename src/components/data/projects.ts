@@ -124,7 +124,7 @@ export const projects: Project[] = [
     title: "Ayra Starr — Listening Party",
     category: "Event / Portrait",
     coverImage:
-      "https://res.cloudinary.com/defbalxci/image/upload/v1767423099/AYRA-STAR_LISTENING_PARTY-15_1_pbybep.jpg",
+      "https://res.cloudinary.com/defbalxci/image/upload/v1768326930/AYRA-STAR_LISTENING_PARTY-15_1_pcrgdo.jpg",
     description:
       "An intimate visual record of Ayra Starr’s listening party, capturing the mood, crowd energy, and personal moments that defined the night. Designed to feel candid, immersive, and culturally relevant.",
     images: [
@@ -748,8 +748,6 @@ export const projects: Project[] = [
      src: "https://res.cloudinary.com/defbalxci/image/upload/v1767426103/DSC00477_gts1ga.jpg",
      layout: "landscape"
       },
-      
-
     ],
   },
   {
@@ -872,11 +870,11 @@ export const projects: Project[] = [
     images: [
           {
       src:"https://res.cloudinary.com/defbalxci/image/upload/v1768302912/OJM00503_gyftpp.jpg",
-      layout:"portrait"
+      layout:"landscape"
      },
           {
       src:"https://res.cloudinary.com/defbalxci/image/upload/v1768302912/OJM00952_t3hram.jpg",
-      layout:"portrait"
+      layout:"landscape"
      },
           {
       src:"https://res.cloudinary.com/defbalxci/image/upload/v1768302903/OJM00218_ttxfmp.jpg",
@@ -898,46 +896,95 @@ export const projects: Project[] = [
       src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299965/OJM00102_eijcf3.jpg",
       layout:"portrait"
      },
-    //       {
-    //   src:"",
-    //   layout:"portrait"
-    //  },
-    //       {
-    //   src:"",
-    //   layout:"portrait"
-    //  },
-    //       {
-    //   src:"",
-    //   layout:"portrait"
-    //  },
-    //       {
-    //   src:"",
-    //   layout:"portrait"
-    //  },
-    //       {
-    //   src:"",
-    //   layout:"portrait"
-    //  },
-    //       {
-    //   src:"",
-    //   layout:"portrait"
-    //  },
-    //       {
-    //   src:"",
-    //   layout:"portrait"
-    //  },
-    //       {
-    //   src:"",
-    //   layout:"portrait"
-    //  },
-    //       {
-    //   src:"",
-    //   layout:"portrait"
-    //  },
-    //       {
-    //   src:"",
-    //   layout:"portrait"
-    //  },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768302901/OJM01070_zhybsx.jpg",
+      layout:"portrait"
+     },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768302896/OJM01054_cyrr4c.jpg",
+      layout:"portrait"
+     },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768302898/OJM01468_qxdvqk.jpg",
+      layout:"portrait"
+     },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768302901/OJM01737_je36tf.jpg",
+      layout:"landscape"
+     },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768302895/OJM01918_oud1p5.jpg",
+      layout:"portrait"
+     },
+      {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768302658/OJM00503_emqszr.jpg",
+      layout:"landscape"
+     },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768302651/OJM00849_aujfyo.jpg",
+      layout:"landscape"
+     },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299971/OJM09720_aa6uje.jpg",
+      layout:"portrait"
+     },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299968/OJM00126_bezpnj.jpg",
+      layout:"landscape"
+     },
+          {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768299960/OJM09695_mlbz6e.jpg",
+      layout:"portrait"
+     },
+    ]
+   },
+
+    {
+    slug: "Interior-Design",
+    title: "Interior Design",
+    category: "Interior Design",
+    coverImage:
+      "https://res.cloudinary.com/defbalxci/image/upload/v1768303355/DSC00161_p8thhk.jpg",
+    description:
+      "Interior photography capturing space, light, and detail. The focus is on documenting design intent and atmosphere in a way that feels natural, balanced, and visually refined.",
+    images: [
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768303373/DSC09919_bvbibu.png",
+      layout:"landscape"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768303355/DSC00161_p8thhk.jpg",
+      layout:"landscape"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768303192/DSC09988_jxlrav.jpg",
+      layout:"landscape"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768303188/DSC00004_qrx3ml.jpg",
+      layout:"landscape"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768303185/DSC00012_jmqjep.jpg",
+      layout:"landscape"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768303182/DSC00136_ocuznv.jpg",
+      layout:"landscape"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768303182/DSC00097_nq2zah.jpg",
+      layout:"landscape"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768303176/DSC09984_rfovjo.jpg",
+      layout:"landscape"
+     },
+        {
+      src:"https://res.cloudinary.com/defbalxci/image/upload/v1768303170/DSC09990_brjguv.jpg",
+      layout:"landscape"
+     },
+     
     ]
    },
 
@@ -1204,7 +1251,7 @@ export const projects: Project[] = [
     title: "Banke Kuku — Fashion Event",
     category: "Fashion / Event",
     coverImage:
-      "https://res.cloudinary.com/defbalxci/image/upload/v1768297245/DSC01515_njsjyg.jpg",
+      "https://res.cloudinary.com/defbalxci/image/upload/v1768297426/DSC01376_g8qt6s.jpg",
     description:
       "Event coverage documenting the intersection of fashion, culture, and audience engagement. The imagery highlights both the collection and the experience surrounding it.",
     images: [
