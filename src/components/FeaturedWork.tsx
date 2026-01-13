@@ -32,6 +32,10 @@ const works = [
     src: "https://res.cloudinary.com/defbalxci/image/upload/v1767187425/OJM00262_1_p04vyz.jpg",
   },
   {
+    title: "Art Photography",
+    src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903460/DSC02092_xudljt.jpg",
+  },
+  {
     title: "Corporate",
     src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903441/Artboard_8_pykwhp.jpg",
   },

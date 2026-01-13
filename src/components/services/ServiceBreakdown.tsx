@@ -1,33 +1,40 @@
+import Link from "next/link"
+import Image from "next/image"
+
 const services = [
   {
-    category: "Photography",
+    title: "Photography",
+    slug: "/portfolio?category=photography",
+    image:
+      "https://res.cloudinary.com/defbalxci/image/upload/v1765903954/DSC03009_dt1mq6.jpg",
     items: [
-      "Fashion & E-commerce Photography",
-      "Product Photography",
-      "Portrait & Lifestyle Photography",
-      "Corporate Event Coverage",
-      "Documentary Photography",
-      "Food Photography",
-      "Pre-wedding Photography",
+      "Fashion & E-commerce",
+      "Portrait & Lifestyle",
+      "Product & Food",
+      "Events & Documentary",
     ],
   },
   {
-    category: "Videography",
+    title: "Videography",
+    slug: "/portfolio?category=videography",
+    image:
+      "https://res.cloudinary.com/defbalxci/image/upload/v1767423515/AYRA-STAR_LISTENING_PARTY-6_1_wbzsla.jpg",
     items: [
-      "Fashion & E-commerce Campaign Videos",
-      "Corporate Event Coverage",
-      "Interviews & Personal Branding",
-      "Podcasts & YouTube Content",
-      "Mini Influencer Campaign Videos",
-      "Video Editing Services",
+      "Campaign Films",
+      "Corporate & Event Coverage",
+      "Personal Branding",
+      "Editing & Post-production",
     ],
   },
   {
-    category: "Branding Support",
+    title: "Branding Support",
+    slug: "/portfolio?category=branding",
+    image:
+      "https://res.cloudinary.com/defbalxci/image/upload/v1767425715/DSC05855_kbtibb.jpg",
     items: [
-      "Visual Direction for Startups",
+      "Visual Direction",
+      "Campaign Strategy",
       "Brand Asset Creation",
-      "Campaign Visual Strategy",
     ],
   },
 ]
@@ -37,48 +44,52 @@ export default function ServiceBreakdown() {
     <section className="bg-black text-white px-6 md:px-20 py-40 border-t border-white/10">
       <div className="max-w-7xl mx-auto">
 
-        {/* Section intro */}
+        {/* Intro */}
         <div className="mb-24 max-w-3xl">
           <p className="mb-4 text-xs uppercase tracking-widest text-white/50">
-            Service breakdown
+            Services
           </p>
           <h2 className="text-3xl md:text-4xl font-light leading-tight text-white/85">
-            Capabilities designed to support different stages of growth.
+            Visual capabilities built around real brand needs.
           </h2>
         </div>
 
-        {/* Services grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
-          {services.map((group, i) => (
-            <div key={i} className="group space-y-10">
-
-              {/* Category header */}
-              <div className="space-y-4">
-                <div className="flex items-center gap-4">
-                  <span className="text-sm font-mono text-white/40">
-                    0{i + 1}
-                  </span>
-                  <span className="h-px w-12 bg-white/20 group-hover:bg-[#dfaa26] transition" />
-                </div>
-
-                <p className="text-xl md:text-2xl font-light">
-                  {group.category}
-                </p>
+        {/* Service cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
+          {services.map((service, i) => (
+            <Link
+              key={i}
+              href={service.slug}
+              className="group block"
+            >
+              {/* Image */}
+              <div className="relative w-full aspect-[3/4] overflow-hidden">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  unoptimized
+                  className="object-cover transition-transform duration-700 group-hover:scale-[1.05]"
+                />
+                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/55 transition" />
               </div>
 
-              {/* Items */}
-              <ul className="space-y-4">
-                {group.items.map((item, j) => (
-                  <li
-                    key={j}
-                    className="text-white/70 leading-relaxed transition hover:text-white"
-                  >
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              {/* Content */}
+              <div className="mt-8 space-y-6">
+                <h3 className="text-2xl font-light flex items-center justify-between">
+                  {service.title}
+                  <span className="text-[#dfaa26] opacity-0 group-hover:opacity-100 transition">
+                    →
+                  </span>
+                </h3>
 
-            </div>
+                <ul className="space-y-2 text-white/70 text-sm">
+                  {service.items.map((item, j) => (
+                    <li key={j}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </Link>
           ))}
         </div>
 
