@@ -6,7 +6,7 @@ export default function LandingVideo() {
       {/* Video */}
       <video
         className="absolute inset-0 h-full w-full object-cover"
-        src="YOUR_VIDEO_URL_HERE"
+        src="https://res.cloudinary.com/defbalxci/video/upload/v1768382542/clip_2_va8dj4.mp4"
         autoPlay
         muted
         loop

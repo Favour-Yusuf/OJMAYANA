@@ -6,38 +6,47 @@ const works = [
   {
     title: "Fashion Campaign",
     src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903242/DSC01483_xnusrn.jpg",
+    category:"fashion"
   },
   {
     title: "Portraits",
     src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903935/DSC09392_jsbmhg.jpg",
+    category:"portrait"
   },
   {
     title: "Events",
     src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903075/DSC09988_rhaxan.jpg",
+    category:"event"
   },
   {
     title: "Portrait",
     src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903958/FEMALE_ARTISTE0059_qlvvbb.jpg",
+    category:"portrait"
   },
   {
     title: "Product Photography",
     src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903837/DSC06340-14_jblqby.jpg",
+    category:"product"
   },
   {
     title: "Lifestyle",
     src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903759/DSC01376_pqqtry.jpg",
+    category:"lifestyle"
   },
   {
     title: "Food Photography",
     src: "https://res.cloudinary.com/defbalxci/image/upload/v1767187425/OJM00262_1_p04vyz.jpg",
+    category:"food"
   },
   {
     title: "Art Photography",
     src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903460/DSC02092_xudljt.jpg",
+    category:"art"
   },
   {
     title: "Corporate",
     src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903441/Artboard_8_pykwhp.jpg",
+    category:"corporate"
   },
 ]
 
@@ -58,10 +67,11 @@ export default function FeaturedWork() {
 
         {/* Instagram-style Masonry Grid */}
         <div className="columns-2 md:columns-3 gap-3 md:gap-4">
-          {works.map((work, i) => (
-            <WorkItem key={i} {...work} />
-          ))}
-        </div>
+  {works.map((work, i) => (
+    <WorkItem key={i} {...work} />
+  ))}
+</div>
+
 
         {/* CTA */}
         <div className="mt-24 text-center">
@@ -90,12 +100,18 @@ export default function FeaturedWork() {
 function WorkItem({
   src,
   title,
+  category,
 }: {
   src: string
   title: string
+  category: string
 }) {
   return (
     <div className="mb-3 md:mb-4 break-inside-avoid group">
+      <Link
+      href={`/portfolio?category=${category}`}
+      className="mb-3 md:mb-4 break-inside-avoid group block"
+    >
       <div className="relative overflow-hidden">
         <img
           src={src}
@@ -110,6 +126,7 @@ function WorkItem({
       <p className="mt-2 text-xs uppercase tracking-widest text-white/60">
         {title}
       </p>
+      </Link>
     </div>
   )
 }

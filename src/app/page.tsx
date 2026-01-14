@@ -7,6 +7,7 @@ import Trust from '@/components/Trust'
 import CreativeDirector from '@/components/CreativeDirector'
 import PrimaryCTA from '@/components/PrimaryCTA'
 import ClientLogos from '@/components/ClientLogos'
+import LandingVideo from '@/components/LandingVideo'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
      
       <Hero/>
       <FeaturedWork/>
+      <LandingVideo/>
       <ClientLogos/>
       <ServicesOutcomes/>
       <Process/>
