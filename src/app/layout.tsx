@@ -4,6 +4,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import Header from "@/components/static/Header";
 import Footer from "@/components/static/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 const hev = localFont({
@@ -44,6 +45,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <SpeedInsights/>
         <Footer />
       </body>
     </html>
