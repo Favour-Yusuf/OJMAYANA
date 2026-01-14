@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.ojmayanastudios.com/sitemap.xml",
+    sitemap: "https://ojmayanastudios.com/sitemap.xml",
   }
 }
