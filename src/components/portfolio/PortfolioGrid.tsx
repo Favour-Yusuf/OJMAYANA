@@ -18,6 +18,7 @@ const categories = [
   "food",
   "interior",
    "video",
+   "art"
 ]
 
 export default function PortfolioGrid() {
