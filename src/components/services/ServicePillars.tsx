@@ -26,7 +26,7 @@ export default function ServicePillars() {
           <p className="mb-4 text-xs uppercase tracking-widest text-white/50">
             What we focus on
           </p>
-          <h2 className="text-3xl md:text-4xl font-light leading-tight text-white/85">
+          <h2 className="text-3xl md:text-4xl font-serif font-semibold leading-tight text-white/85">
             Three ways we support brand growth through visual storytelling.
           </h2>
         </div>
@@ -40,7 +40,7 @@ export default function ServicePillars() {
             >
               {/* Index */}
               <div className="flex items-center gap-4">
-                <span className="text-sm text-white/40 font-mono">
+                <span className="text-sm text-[#dfaa26] font-mono">
                   0{i + 1}
                 </span>
                 <span className="h-px w-12 bg-white/20 group-hover:bg-[#dfaa26] transition" />

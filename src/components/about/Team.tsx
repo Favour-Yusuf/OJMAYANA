@@ -7,21 +7,22 @@ type TeamMember = {
 }
 
 const team: TeamMember[] = [
+   {
+    name: "Benjamin Olisaemeka Ojukwu",
+    role: "Creative Director",
+    image: "https://res.cloudinary.com/defbalxci/image/upload/v1767420923/BENJAMIN_OLISA_Creative_director_g7dtrv.png",
+  },
   {
     name: "Nonye Ezeaka",
-    role: "Team Member",
+    role: "Creative Manager",
     image: "https://res.cloudinary.com/defbalxci/image/upload/v1767361649/NONYE_EZEAKA_hgxxil.jpg",
   },
   {
-    name: "Aron",
-    role: "Team Member",
+    name: "Aaron Bhutto (Blaq)",
+    role: " Assistant photographer ",
     image: "https://res.cloudinary.com/defbalxci/image/upload/v1767361651/AARON_HEBRON_BHUTTO_qjooks.jpg",
   },
-  {
-    name: "Benjamin Olisa",
-    role: "Team Member",
-    image: "https://res.cloudinary.com/defbalxci/image/upload/v1767420923/BENJAMIN_OLISA_Creative_director_g7dtrv.png",
-  },
+ 
 ]
 
 export default function Team() {
@@ -55,7 +56,7 @@ export default function Team() {
                 <p className="text-xl font-light">
                   {member.name}
                 </p>
-                <p className="mt-1 text-sm text-white/60">
+                <p className="mt-1 text-sm text-[#dfaa26]/70">
                   {member.role}
                 </p>
               </div>

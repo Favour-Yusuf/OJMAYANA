@@ -33,7 +33,7 @@ export default function ClientLogosMarquee() {
   return (
     <section className="bg-black text-white py-24 border-t border-white/10 overflow-hidden">
       <div className="px-6 md:px-20 mb-12">
-        <p className="text-xs uppercase tracking-widest text-white/50">
+        <p className="text-xl uppercase tracking-widest text-white/50">
           Trusted by
         </p>
       </div>
@@ -55,13 +55,13 @@ export default function ClientLogosMarquee() {
 function Logo({ src, alt }: { src: string; alt: string }) {
   return (
     <div className="flex items-center justify-center">
-      <div className="flex items-center justify-center h-14 w-32 bg-white/50 rounded-md">
+      <div className="flex items-center justify-center h-14 w-32 md:h-24 md:w-40 bg-white/50 rounded-md">
         <Image
           src={src}
           alt={alt}
-          width={160}
-          height={80}
-          className="h-10 w-auto object-contain opacity-80"
+          width={300}
+          height={200}
+          className="h-10 md:h-16 w-auto object-contain "
         />
       </div>
     </div>

@@ -11,7 +11,7 @@ export default function ServicesCTA() {
         </p>
 
         {/* Headline */}
-        <h2 className="mb-10 text-4xl md:text-6xl font-light leading-tight">
+        <h2 className="mb-10 text-4xl font-serif md:text-6xl font-semibold leading-tight">
           Not sure what you need yet?
           <br />
           Let’s figure it out together.
@@ -23,7 +23,7 @@ export default function ServicesCTA() {
         {/* CTA */}
         <Link
           href="/contact"
-          className="inline-flex items-center gap-4 border border-white px-12 py-4 text-sm uppercase tracking-widest transition hover:bg-white hover:text-black"
+          className="inline-flex items-center gap-4 border text-[#dfaa26] border-[#dfaa26] px-12 py-4 text-sm uppercase tracking-widest transition hover:bg-white hover:text-black"
         >
           Start a conversation
           <span className="text-lg leading-none">→</span>

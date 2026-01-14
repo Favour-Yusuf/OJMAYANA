@@ -17,7 +17,7 @@ export default function CreativeDirector() {
           From the Creative Director
         </p>
 
-        <h2 className="mb-10 text-3xl md:text-5xl font-light leading-tight">
+        <h2 className="mb-10 text-3xl font-serif md:text-5xl font-light leading-tight">
           OJMAYANA Studios is where creative people grow by doing
           bold, high-quality work that gets noticed —
           and builds long-term value.
@@ -29,7 +29,7 @@ export default function CreativeDirector() {
           closer to the future they’re trying to create.
         </p>
 
-        <p className="mt-8 text-sm text-white/60">
+        <p className="mt-8 text-sm text-[#dfaa26]/60">
           — OJ Mayana, Creative Director
         </p>
       </div>

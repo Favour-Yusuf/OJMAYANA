@@ -8,25 +8,27 @@ const works = [
     src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903242/DSC01483_xnusrn.jpg",
     category:"fashion"
   },
-  {
-    title: "Portraits",
-    src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903935/DSC09392_jsbmhg.jpg",
+  // {
+  //   title: "Portraits",
+  //   src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903935/DSC09392_jsbmhg.jpg",
+  //   category:"portrait"
+  // },
+   {
+    title: "Portrait",
+    src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903958/FEMALE_ARTISTE0059_qlvvbb.jpg",
     category:"portrait"
+  },
+  
+ 
+  {
+    title: "Product Photography",
+    src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903837/DSC06340-14_jblqby.jpg",
+    category:"product"
   },
   {
     title: "Events",
     src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903075/DSC09988_rhaxan.jpg",
     category:"event"
-  },
-  {
-    title: "Portrait",
-    src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903958/FEMALE_ARTISTE0059_qlvvbb.jpg",
-    category:"portrait"
-  },
-  {
-    title: "Product Photography",
-    src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903837/DSC06340-14_jblqby.jpg",
-    category:"product"
   },
   {
     title: "Lifestyle",
@@ -35,7 +37,7 @@ const works = [
   },
   {
     title: "Food Photography",
-    src: "https://res.cloudinary.com/defbalxci/image/upload/v1767187425/OJM00262_1_p04vyz.jpg",
+    src: "https://res.cloudinary.com/defbalxci/image/upload/v1768299971/OJM09720_aa6uje.jpg",
     category:"food"
   },
   {
@@ -57,10 +59,10 @@ export default function FeaturedWork() {
 
         {/* Section Header */}
         <div className="mb-16">
-          <p className="mb-3 text-xs uppercase tracking-widest text-white/50">
+          <p className="mb-3 text-xs font-hev uppercase tracking-widest text-white/50">
             Selected work
           </p>
-          <h2 className="text-4xl md:text-6xl font-light leading-tight">
+          <h2 className="text-4xl font-serif md:text-6xl font-bold leading-tight">
             A few stories we’ve told.
           </h2>
         </div>

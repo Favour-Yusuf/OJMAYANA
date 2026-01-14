@@ -23,7 +23,7 @@ export default function Beliefs() {
               className="group flex flex-col md:flex-row md:items-start gap-6"
             >
               {/* Index */}
-              <span className="text-sm text-white/40 font-mono">
+              <span className="text-sm text-[#dfaa26] font-mono">
                 0{i + 1}
               </span>
 

@@ -27,7 +27,7 @@ export default function AboutHero() {
           </p>
 
           {/* Headline */}
-          <h1 className="text-4xl md:text-6xl font-light leading-tight">
+          <h1 className="text-4xl font-serif md:text-6xl font-light leading-tight">
             We are a creative documentary studio
             <br />
             building trust through storytelling.

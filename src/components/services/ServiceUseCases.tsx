@@ -31,7 +31,7 @@ export default function ServiceUseCases() {
           <p className="mb-4 text-xs uppercase tracking-widest text-white/50">
             When clients come to us
           </p>
-          <h2 className="text-3xl md:text-4xl font-light leading-tight text-white/85">
+          <h2 className="text-3xl md:text-4xl font-serif font-semibold leading-tight text-white/85">
             Clear moments where visual storytelling becomes essential.
           </h2>
         </div>
@@ -43,7 +43,7 @@ export default function ServiceUseCases() {
 
               {/* Index + accent */}
               <div className="flex items-center gap-4">
-                <span className="text-sm font-mono text-white/40">
+                <span className="text-sm font-mono text-[#dfaa26]">
                   0{i + 1}
                 </span>
                 <span className="h-px w-12 bg-white/20" />

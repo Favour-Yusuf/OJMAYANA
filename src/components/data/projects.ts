@@ -8,6 +8,7 @@ export type ProjectMedia =
       type: "video";
       src: string;
       poster?: string;
+      layout:"portrait" | "landscape"
     };
 
 export type Project = {
@@ -1897,6 +1898,7 @@ export const projects: Project[] = [
     {
       type: "video",
       src: "https://res.cloudinary.com/defbalxci/video/upload/v1768387675/Video_Trimmer_-_Free_Online_Video_Cutter_2_a8cek6.mp4",
+      layout:"portrait"
     },
   ],
 },
@@ -1911,6 +1913,7 @@ export const projects: Project[] = [
     {
       type: "video",
       src: "https://res.cloudinary.com/defbalxci/video/upload/v1768387955/Video_Trimmer_-_Free_Online_Video_Cutter_ty0ooe.mp4",
+      layout:"portrait"
     },
   ],
 },
@@ -1925,12 +1928,150 @@ export const projects: Project[] = [
     {
       type: "video",
       src: "https://res.cloudinary.com/defbalxci/video/upload/v1768387119/Video_Compressor___Reduce_Video_File_Size_Online_1_lwpyw8.mp4",
+      layout:"portrait"
     },
   ],
-}
+},
 
 
+{
+    slug: "ryno-autos-headshots",
+    title: "Ryno Autos — Corporate Headshots",
+    category: "Ryno Autos — Corporate Headshots",
+    coverImage:
+      "https://res.cloudinary.com/defbalxci/image/upload/v1768425163/DSC02485-Edit_tro1om.jpg",
+    description:
+      "Professional headshots created to support Ryno Autos’ brand credibility and public-facing communications. The focus was on clarity, confidence, and consistency across all team visuals.",
+    media: [
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/defbalxci/image/upload/v1768425711/DSC02403-Edit_arsgqi.jpg",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/defbalxci/image/upload/v1768425710/DSC02349-Edit-2_egqkl0.jpg",
+        layout: "portrait",
+      },
+      
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/defbalxci/image/upload/v1768425710/DSC02370-Edit-2_hyd44t.jpg",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/defbalxci/image/upload/v1768425569/DSC02284-Edit-3_xjaved.jpg",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/defbalxci/image/upload/v1768425568/DSC02335-Edit-2_jbbady.jpg",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/defbalxci/image/upload/v1768425567/DSC02310-Edit-2_uol5ig.jpg",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/defbalxci/image/upload/v1768425163/DSC02485-Edit_tro1om.jpg",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/defbalxci/image/upload/v1768425126/DSC02265-Edit-3_x3weat.jpg",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "",
+        layout: "portrait",
+      },
+    ],
+  },
 
+   {
+    slug: "corporate-leadership-portraits",
+    title: "Corporate Leadership Portraits",
+    category: "Corporate / Portrait",
+    coverImage:
+      "https://res.cloudinary.com/defbalxci/image/upload/v1768424821/OJM08858_copy_ylvrt5.jpg",
+    description:
+      "A series of executive portraits created for founders and leadership teams. The work emphasizes authority, approachability, and visual consistency across press, websites, and internal materials.",
+    media: [
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903454/DSC00878_sc2gxf.jpg",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903454/DSC00904_wln92p.jpg",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903959/DSC07540_q4dn82.jpg",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903447/WhatsApp_Image_2024-12-23_at_06.14.45_fd6bf2b1_xx713u.jpg",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903441/Artboard_8_pykwhp.jpg",
+        layout: "landscape",
+      },
+      
+    ],
+  },
+
+   {
+    slug: "cosmetics-product-campaign",
+    title: "Cosmetics Product Campaign",
+    category: "Product / Cosmetics",
+    coverImage:
+      "https://res.cloudinary.com/defbalxci/image/upload/v1765903934/DSC06334-12_j97ds4.jpg",
+    description:
+      "A product-focused campaign created to highlight texture, detail, and form. The visuals were designed to support brand storytelling while maintaining clarity and consistency for digital and commercial use.",
+    media: [
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903473/DSC02039_kcas8c.jpg",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903472/DSC02036_ok8yxk.jpg",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903469/DSC02028_mmaobu.jpg",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903471/DSC02033_r827pj.jpg",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903468/DSC02030_mtbloy.jpg",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/defbalxci/image/upload/v1765903837/DSC06340-14_jblqby.jpg",
+        layout: "portrait",
+      },
+    
+    ],
+  },
 
 
   // more projects…

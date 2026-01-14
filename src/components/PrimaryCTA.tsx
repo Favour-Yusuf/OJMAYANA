@@ -27,7 +27,7 @@ export default function PrimaryCTA() {
 
         <a
           href="/contact"
-          className="inline-block border border-white px-10 py-4 text-sm uppercase tracking-widest transition hover:bg-white hover:text-black"
+          className="inline-block border text-[#dfaa26] px-10 py-4 text-sm uppercase tracking-widest transition hover:bg-white hover:text-black"
         >
           Start a Project
         </a>

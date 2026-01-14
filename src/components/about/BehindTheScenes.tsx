@@ -28,7 +28,7 @@ export default function BehindTheScenes() {
           <p className="mb-4 text-xs uppercase tracking-widest text-white/50">
             Behind the scenes
           </p>
-          <h2 className="text-3xl md:text-4xl font-light leading-tight text-white/80">
+          <h2 className="text-3xl md:text-4xl font-serif font-semibold leading-tight text-white/80">
             How the work comes together.
           </h2>
         </div>

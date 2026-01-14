@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${hev.variable} antialiased`}
+        className={`${hev.variable}  antialiased`}
       >
         <Header />
         {children}

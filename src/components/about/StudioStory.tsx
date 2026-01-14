@@ -81,7 +81,7 @@ function StoryBeat({
           imageLeft ? "md:order-2" : "md:order-1"
         }`}
       >
-        <h3 className="text-2xl md:text-3xl font-light">
+        <h3 className="text-2xl font-serif md:text-3xl font-semibold">
           {title}
         </h3>
 

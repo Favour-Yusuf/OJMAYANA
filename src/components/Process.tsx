@@ -40,7 +40,7 @@ export default function Process() {
             How we work
           </p>
 
-          <h2 className="text-4xl md:text-6xl font-light leading-tight">
+          <h2 className="text-4xl md:text-6xl font-serif font-semibold leading-tight">
             A clear process.
             <br />
             Built for serious brands.
@@ -81,7 +81,7 @@ function ProcessStep({
     >
       {/* Step number */}
       <div className="md:col-span-2">
-        <span className="text-sm text-white/40">{number}</span>
+        <span className="text-sm text-[#dfaa26]/60">{number}</span>
       </div>
 
       {/* Content */}

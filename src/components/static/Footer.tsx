@@ -1,22 +1,26 @@
 import Link from "next/link"
-import RateCardDropdown from "../RateCardDropdown"
-
 import Image from "next/image"
+import {
+  Instagram,
+  Mail,
+  Phone,
+} from "lucide-react"
+
+import RateCardDropdown from "../RateCardDropdown"
 
 export default function Footer() {
   return (
     <footer className="bg-black text-white px-6 md:px-20 py-28 border-t border-white/10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-16">
 
-        {/* Brand / Statement */}
-        <div className="md:col-span-2">
-          <Link href="/" >
+        {/* Brand */}
+        <div className="md:col-span-2 space-y-6">
+          <Link href="/" className="inline-block">
             <Image
               src="/logo.png"
               alt="OJMayana Studios Logo"
               width={150}
-              height={100}
-              
+              height={80}
             />
           </Link>
 
@@ -33,84 +37,101 @@ export default function Footer() {
           </p>
 
           <ul className="space-y-4 text-sm uppercase tracking-widest">
-            <li>
-              <Link href="/about" className="text-white/70 hover:text-[#dfaa26] transition">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link href="/portfolio" className="text-white/70 hover:text-[#dfaa26] transition">
-                Portfolio
-              </Link>
-            </li>
-            <li>
-              <Link href="/services" className="text-white/70 hover:text-[#dfaa26] transition">
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" className="text-white/70 hover:text-[#dfaa26] transition">
-                Contact
-              </Link>
-            </li>
+            {[
+              { label: "About", href: "/about" },
+              { label: "Portfolio", href: "/portfolio" },
+              { label: "Services", href: "/services" },
+              { label: "Contact", href: "/contact" },
+            ].map((item) => (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  className="text-white/70 hover:text-[#dfaa26] transition"
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
-        {/* Contact / Social */}
+        {/* Contact & Social */}
         <div>
           <p className="mb-6 text-xs uppercase tracking-widest text-white/50">
             Contact
           </p>
 
           <ul className="space-y-4 text-sm text-white/70">
-            <li>
-              <span className="block text-white/40">Email</span>
-              ojmayana61@gmail.com
+            <li className="flex items-start gap-3">
+              <Mail className="mt-0.5 h-4 w-4 text-[#dfaa26]" />
+              <a
+                href="mailto:ojmayana61@gmail.com"
+                className="hover:text-white transition"
+              >
+                ojmayana61@gmail.com
+              </a>
             </li>
 
-            <li>
-              <span className="block text-white/40">Phone / WhatsApp</span>
-              07032539068
+            <li className="flex items-start gap-3">
+              <Phone className="mt-0.5 h-4 w-4 text-[#dfaa26]" />
+              <a
+                href="tel:07032539068"
+                className="hover:text-white transition"
+              >
+                07032539068
+              </a>
             </li>
 
-            <li>
-              <span className="block text-white/40">Location</span>
+            <li className="text-white/50 text-sm">
               Online · Available to travel
             </li>
           </ul>
 
-          {/* Social */}
-          <div className="mt-8 space-y-2 text-sm">
-            <a
-              href="https://www.instagram.com/ojmayana_/"
-              target="_blank"
-              className="block text-white/60 hover:text-[#dfaa26] transition"
-            >
-              Instagram · @ojmayana_
-            </a>
+          {/* Social icons */}
+          <div className="mt-8 flex-col items-center gap-5">
+            <div className="flex mb-3.5">
+               <Instagram className="h-5 w-5 text-[#dfaa26]" />
             <a
               href="https://www.instagram.com/ojmayanastudios/"
               target="_blank"
-              className="block text-white/60 hover:text-[#dfaa26] transition"
+              aria-label="Instagram OJMayana"
+              className="text-white/60 hover:text-[#dfaa26]/70 transition ml-2.5"
             >
-              Instagram · @ojmayanastudios
+             @ojmayanastudios
             </a>
+            </div>
+            
+
+             <div className="flex mb-3.5">
+               <Instagram className="h-5 w-5 text-[#dfaa26]" />
+            <a
+              href="https://www.instagram.com/ojmayana_/"
+              target="_blank"
+              aria-label="Instagram OJMayana"
+              className="text-white/60 hover:text-[#dfaa26]/70 transition ml-2.5"
+            >
+             @ojmayana_
+            </a>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Divider */}
-      <div className="max-w-7xl mx-auto mt-20 pt-10 border-t border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+      {/* Bottom Bar */}
+      <div className="max-w-7xl mx-auto mt-20 pt-10 border-t border-white/10 flex flex-col md:flex-row items-center md:items-center justify-between gap-8">
 
         {/* Left */}
-        <p className="text-xs text-white/40">
+        <p className="text-xs text-white/40 text-center md:text-left">
           © {new Date().getFullYear()} OJMayana Studios · Stories that last.
         </p>
 
         {/* Right actions */}
-        <div className="flex items-center gap-6 text-xs uppercase tracking-widest">
-          <RateCardDropdown />
+        <div className="flex flex-col md:flex-row items-center gap-6 text-xs uppercase tracking-widest">
 
+          {/* Centered on mobile to avoid cutoff */}
+          <div className="relative flex justify-center w-full md:w-auto">
+            <RateCardDropdown align="center" />
+          </div>
 
           <Link
             href="/contact"

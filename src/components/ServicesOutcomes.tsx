@@ -11,7 +11,7 @@ export default function ServicesOutcomes() {
             What we do
           </p>
 
-          <h2 className="text-4xl md:text-6xl font-light leading-tight">
+          <h2 className="text-4xl md:text-6xl font-serif font-semibold leading-tight">
             We don’t just create visuals.
             <br />
             We help brands grow into something bigger.
@@ -74,7 +74,7 @@ function Outcome({
 }) {
   return (
     <div className="space-y-6">
-      <span className="text-sm text-white/40">{number}</span>
+      <span className="text-sm text-[#dfaa26]/60">{number}</span>
 
       <h3 className="text-2xl md:text-3xl font-light">
         {title}
