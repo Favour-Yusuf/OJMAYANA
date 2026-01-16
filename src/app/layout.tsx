@@ -10,19 +10,19 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 const hev = localFont({
   src: [
     {
-      path: "./fonts/HelveticaNeueRoman.otf",
+      path: "./fonts/NeueMachina-Light.otf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "./fonts/HelveticaNeueBold.otf",
+      path: "./fonts/NeueMachina-Regular.otf",
       weight: "700",
       style: "normal",
     },
     {
-      path: "./fonts/HelveticaNeueItalic.ttf",
-      weight: "400",
-      style: "italic",
+      path: "./fonts/NeueMachina-Ultrabold.otf",
+      weight: "900",
+      style: "normal",
     },
   ],
   variable: "--font-hev",

@@ -62,7 +62,7 @@ function Intro() {
         Trusted by
       </p>
 
-      <h2 className="text-4xl md:text-6xl font-serif font-semibold leading-tight">
+      <h2 className="text-4xl md:text-6xl font-bold leading-tight">
         Brands that value
         <br />
         quality and clarity.
@@ -89,7 +89,7 @@ function Clients() {
         {clients.map((client, i) => (
           <div
             key={i}
-            className="border border-[#dfaa26]/10 px-6 py-8 text-center text-sm uppercase tracking-wide"
+            className="border border-[#dfaa26]/50 px-6 py-8 text-center text-sm uppercase tracking-wide"
           >
             {client}
           </div>

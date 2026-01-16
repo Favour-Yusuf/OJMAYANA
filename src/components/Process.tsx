@@ -40,7 +40,7 @@ export default function Process() {
             How we work
           </p>
 
-          <h2 className="text-4xl md:text-6xl font-serif font-semibold leading-tight">
+          <h2 className="text-4xl md:text-6xl font-bold leading-tight">
             A clear process.
             <br />
             Built for serious brands.

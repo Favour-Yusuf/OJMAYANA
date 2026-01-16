@@ -41,7 +41,6 @@ export default function Hero() {
       style={{ height: `${slides.length * 100}vh` }}
     >
       <div className="sticky top-0 h-screen w-screen overflow-hidden">
-
         {/* Background images */}
         {slides.map((slide, i) => (
           <img
@@ -53,13 +52,11 @@ export default function Hero() {
             }`}
           />
         ))}
-
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/55" />
-
         {/* Text */}
         <div className="relative z-10 flex h-full items-center px-6 md:px-20">
-          <h1 className="max-w-6xl text-4xl md:text-6xl lg:text-7xl font-bold font-serif leading-tight uppercase tracking-wide">
+          <h1 className="max-w-6xl text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight uppercase tracking-wide">
             {slides.map((slide, i) => (
               <span
                 key={i}
@@ -74,7 +71,6 @@ export default function Hero() {
             ))}
           </h1>
         </div>
-
       </div>
     </section>
   )

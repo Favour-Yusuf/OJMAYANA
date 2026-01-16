@@ -11,7 +11,7 @@ export default function ServicesOutcomes() {
             What we do
           </p>
 
-          <h2 className="text-4xl md:text-6xl font-serif font-semibold leading-tight">
+          <h2 className="text-4xl md:text-6xl font-bold leading-tight">
             We don’t just create visuals.
             <br />
             We help brands grow into something bigger.

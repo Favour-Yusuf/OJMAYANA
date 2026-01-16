@@ -9,7 +9,7 @@ export default function ProjectCTA() {
           Interested in something similar?
         </p>
 
-        <h2 className="mb-10 text-4xl md:text-5xl font-light leading-tight">
+        <h2 className="mb-10 text-4xl md:text-5xl font-bold leading-tight">
           Let’s create something worth remembering.
         </h2>
 

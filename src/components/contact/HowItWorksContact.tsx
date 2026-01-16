@@ -26,7 +26,7 @@ export default function HowItWorksContact() {
               Step {i + 1}
             </p>
 
-            <h3 className="text-xl font-light">
+            <h3 className="text-xl font-bold">
               {step.title}
             </h3>
 

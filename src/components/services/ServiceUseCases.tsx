@@ -31,7 +31,7 @@ export default function ServiceUseCases() {
           <p className="mb-4 text-xs uppercase tracking-widest text-white/50">
             When clients come to us
           </p>
-          <h2 className="text-3xl md:text-4xl font-serif font-semibold leading-tight text-white/85">
+          <h2 className="text-3xl md:text-4xl  font-bold leading-tight text-white/85">
             Clear moments where visual storytelling becomes essential.
           </h2>
         </div>

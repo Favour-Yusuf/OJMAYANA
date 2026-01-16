@@ -53,7 +53,7 @@ export default function Team() {
 
               {/* Text */}
               <div className="mt-6">
-                <p className="text-xl font-light">
+                <p className="text-xl font-bold">
                   {member.name}
                 </p>
                 <p className="mt-1 text-sm text-[#dfaa26]/70">

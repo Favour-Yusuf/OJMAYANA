@@ -11,7 +11,7 @@ export default function ServicesCTA() {
         </p>
 
         {/* Headline */}
-        <h2 className="mb-10 text-4xl font-serif md:text-6xl font-semibold leading-tight">
+        <h2 className="mb-10 text-4xl md:text-6xl font-bold leading-tight">
           Not sure what you need yet?
           <br />
           Let’s figure it out together.

@@ -30,7 +30,7 @@ export default function PortfolioHero() {
           </div>
 
           {/* Headline */}
-          <h1 className="text-4xl md:text-6xl font-light leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
             Selected projects.
             <br />
             Built with intention.

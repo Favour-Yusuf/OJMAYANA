@@ -62,7 +62,7 @@ export default function FeaturedWork() {
           <p className="mb-3 text-xs font-hev uppercase tracking-widest text-white/50">
             Selected work
           </p>
-          <h2 className="text-4xl font-serif md:text-6xl font-bold leading-tight">
+          <h2 className="text-4xl md:text-6xl font-bold leading-tight">
             A few stories we’ve told.
           </h2>
         </div>

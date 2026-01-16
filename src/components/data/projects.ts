@@ -2072,6 +2072,78 @@ export const projects: Project[] = [
     
     ],
   },
+  {
+    slug: "lagos-fashion-week",
+    title: "Lagos Fashion Week",
+    category: "Fashion / Event / Culture",
+    coverImage:
+      "https://res.cloudinary.com/defbalxci/image/upload/v1768493913/DSC07886_t2borf.jpg",
+    description:
+      "Visual coverage of Lagos Fashion Week, documenting runway presentations, backstage moments, and the cultural atmosphere surrounding the event. The focus was on capturing movement, craftsmanship, and the energy of contemporary African fashion as it unfolded in real time.",
+    media: [
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/defbalxci/image/upload/v1768493924/DSC07037_xfpio0.jpg",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/defbalxci/image/upload/v1768493926/DSC07038_lm1r0g.jpg",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/defbalxci/image/upload/v1768493947/DSC07312_nfp8jp.jpg",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "https://res.cloudinary.com/defbalxci/image/upload/v1768493910/DSC08896_ymbdwf.jpg",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "",
+        layout: "portrait",
+      },
+      {
+        type: "image",
+        src: "",
+        layout: "portrait",
+      },
+     
+    ],
+  },
 
 
   // more projects…
